@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.july.mybatis.mapper.UserinfoMapper">
+
+    <select id="getUserInfo" resultType="com.july.mybatis.entity.Userinfo">
+        select t from userinfo t where t.id = #{id}
+    </select>
+
+    <select id="findUserInfos" resultType="com.july.mybatis.entity.Userinfo">
+        select t.id,t.username,t.password from userinfo t where
+        1 = 1
+        <if test="param.id != null">
+            and t.id = #{param.id}
+        </if>
+    </select>
+
+</mapper>
