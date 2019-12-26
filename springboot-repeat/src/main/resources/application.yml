@@ -1,0 +1,4 @@
+server:
+  port: 8701
+  servlet:
+    context-path: /repeat
