@@ -7,4 +7,8 @@
 
 ## Springboot-swagger模块
 
--   集成swagger组件，实现接口文档的管理与在线调试
+- 集成swagger组件，实现接口文档的管理与在线调试
+
+## Springboot-repeat模块
+
+- 新增防重复提交的功能，通过本地锁实现
